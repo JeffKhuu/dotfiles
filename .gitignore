@@ -1,0 +1,8 @@
+neovim/.config/nvim/backup/
+neovim/.config/nvim/undo/
+neovim/.config/nvim/swap/
+neovim/.config/nvim/.netrwhist
+neovim/.config/nvim/coc-settings.json
+neovim/.config/nvim/dadbod.vim
+neovim/.config/nvim/plugin/*
+neovim/.config/nvim/node-modules/*

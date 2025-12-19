@@ -1,8 +1,8 @@
-neovim/.config/nvim/backup/
-neovim/.config/nvim/undo/
-neovim/.config/nvim/swap/
-neovim/.config/nvim/.netrwhist
-neovim/.config/nvim/coc-settings.json
-neovim/.config/nvim/dadbod.vim
-neovim/.config/nvim/plugin/*
-neovim/.config/nvim/node-modules/
+nvim/.config/nvim/backup/
+nvim/.config/nvim/undo/
+nvim/.config/nvim/swap/
+nvim/.config/nvim/.netrwhist
+nvim/.config/nvim/coc-settings.json
+nvim/.config/nvim/dadbod.vim
+nvim/.config/nvim/plugin/*
+nvim/.config/nvim/node-modules/

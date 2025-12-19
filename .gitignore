@@ -5,4 +5,4 @@ neovim/.config/nvim/.netrwhist
 neovim/.config/nvim/coc-settings.json
 neovim/.config/nvim/dadbod.vim
 neovim/.config/nvim/plugin/*
-neovim/.config/nvim/node-modules/*
+neovim/.config/nvim/node-modules/

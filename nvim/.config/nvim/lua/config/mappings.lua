@@ -6,15 +6,18 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
 	callback = function()
 		set('n', 'K', vim.lsp.buf.hover, { desc = "Hover" })
-		set('n', '<M-k>', vim.diagnostic.open_float, { desc = "View Diagnostic" })
-		set('n', '<leader>lf', vim.lsp.buf.format, { desc = "[F]ormat" })
+		set('n', '<leader>lk', vim.diagnostic.open_float, { desc = "View Diagnostic" })
 		set('n', '<leader>ln', vim.lsp.buf.rename, { desc = "Re[n]ame" })
 		set('n', '<leader>ld', vim.lsp.buf.definition, { desc = "[D]efinition" })
 		set('n', '<leader>lr', vim.lsp.buf.references, { desc = "[R]eferences" })
 		set('n', '<leader>lv', "<cmd>vsplit | lua vim.lsp.buf.definition.()<CR>",
 			{ desc = "[V]ertical Split and goto Definition" })
 	end
-})
+},
+
+set({"n", "v"}, "<leader>lf", function()
+    require("conform").format({ async = true, lsp_fallback = true })
+end, { desc = "Format file or selection" }))
 
 -- File Movement
 set('n', '<leader>f', '<cmd>:Pick files<CR>')
@@ -48,3 +51,6 @@ set('n', '<C-u>', "<C-u>zz", { desc = "Half page up (and center)" })
 -- Move Selection
 set('v', 'J', ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 set('v', 'K', ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+
+-- Toggle Floating Term
+set('n', '<leader>t', '<CMD>:ToggleTerm direction=float<CR>', { desc = "Toggle Floating Terminal"})

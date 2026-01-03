@@ -56,8 +56,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- Diagnostic Config
 vim.diagnostic.config({
-	-- virtual_lines = true,
-	virtual_text = true,
+	virtual_lines = true,
+	-- virtual_text = true,
 	underline = true,
 	update_in_insert = false,
 	severity_sort = true,
@@ -75,3 +75,8 @@ vim.diagnostic.config({
 		},
 	},
 })
+
+local Rule = require('nvim-autopairs.rule')
+local npairs = require('nvim-autopairs')
+npairs.add_rule(Rule('"""', '"""'))
+npairs.add_rule(Rule('```', '```'))

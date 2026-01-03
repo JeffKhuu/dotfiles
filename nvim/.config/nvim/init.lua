@@ -1,6 +1,3 @@
--- #  TODO: Create git repo
--- #  TODO: Create Typst settings
--- #  TODO: Create LaTeX settings ?
 -- #  TODO: Create ipynb settings
 
 -- Set Leader Key
@@ -27,6 +24,8 @@ vim.lsp.enable(
 
 		-- Python
 		"pyright",
-		"ruff",
+
+		-- Typst
+		"tinymist"
 	}
 )

@@ -17,7 +17,7 @@ vim.lsp.config("", {})
 vim.lsp.enable(
 	{
 		-- luals
-		"luals",
+		"lua_ls",
 
 		-- C and C++
 		"clangd",
@@ -26,6 +26,8 @@ vim.lsp.enable(
 		"pyright",
 
 		-- Typst
-		"tinymist"
+		"tinymist",
+
+		-- Javascript
 	}
 )

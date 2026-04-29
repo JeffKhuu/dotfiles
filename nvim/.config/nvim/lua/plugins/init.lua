@@ -1,14 +1,7 @@
 return {
 	-- LSP & Formatting
+	{ "mason-org/mason.nvim" },
 	{ 'neovim/nvim-lspconfig' },
-	{
-		'stevearc/conform.nvim',
-		opts = {
-			formatters_by_ft = {
-				python = { "black" },
-			},
-		}
-	},
 	{
 		'mason-org/mason-lspconfig.nvim',
 		opts = {},
@@ -17,6 +10,7 @@ return {
 			"neovim/nvim-lspconfig",
 		},
 	},
+	{ 'WhoIsSethDaniel/mason-tool-installer.nvim' },
 
 	-- Colorscheme
 	{
@@ -32,6 +26,14 @@ return {
 	{ 'nvim-mini/mini.basics', version = '*' },
 	{ 'nvim-mini/mini.pick',   opts = {} },
 	{ 'nvim-mini/mini.visits', opts = {} },
+
+	-- Statusline
+	{
+		'rebelot/heirline.nvim',
+		config = function()
+			require("config.status")
+		end
+	},
 
 	-- Other Utilities
 	{

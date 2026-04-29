@@ -54,6 +54,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- Limit Pop-Up Menu (pum) Height to 10 rows
+opt.pumheight = 10
+
 -- Diagnostic Config
 vim.diagnostic.config({
 	virtual_lines = true,

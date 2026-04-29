@@ -1,5 +1,3 @@
--- #  TODO: Create ipynb settings
-
 -- Set Leader Key
 vim.g.mapleader = " "
 
@@ -13,9 +11,7 @@ require("config.options")
 require("config.mappings")
 
 -- LSP
-vim.lsp.config("", {})
-vim.lsp.enable(
-	{
+local servers = {
 		-- luals
 		"lua_ls",
 
@@ -27,7 +23,9 @@ vim.lsp.enable(
 
 		-- Typst
 		"tinymist",
-
-		-- Javascript
-	}
-)
+}
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+vim.lsp.config("*", {
+	capabilities = capabilities;
+})
+vim.lsp.enable(servers)

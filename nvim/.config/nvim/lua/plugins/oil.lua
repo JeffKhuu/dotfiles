@@ -1,3 +1,4 @@
+-- File Explorer
 return {
 	'stevearc/oil.nvim',
 	---@module 'oil'

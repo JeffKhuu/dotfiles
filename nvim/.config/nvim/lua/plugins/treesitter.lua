@@ -8,6 +8,7 @@ return {
             local parser_installed = {
                 "python",
                 "c",
+				"cpp",
                 "lua",
             }
 

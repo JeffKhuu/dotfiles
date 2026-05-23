@@ -17,7 +17,7 @@ opt.splitbelow = true
 opt.splitright = true
 
 -- Sign column
-opt.signcolumn = "yes"
+opt.signcolumn = "number"
 
 -- Disable the swapfile
 opt.swapfile = false
@@ -59,7 +59,7 @@ opt.pumheight = 10
 
 -- Diagnostic Config
 vim.diagnostic.config({
-	virtual_lines = true,
+	-- virtual_lines = true,
 	-- virtual_text = true,
 	underline = true,
 	update_in_insert = false,

@@ -18,6 +18,9 @@ local servers = {
 		-- C and C++
 		"clangd",
 
+		-- Rust
+		"rust-analyzer",
+
 		-- Python
 		"pyright",
 
